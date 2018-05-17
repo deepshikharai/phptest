@@ -38,7 +38,7 @@ public class Docker_p {
 	public static void setUp() throws Exception {
 		
 		DesiredCapabilities dcp = new DesiredCapabilities();
-		dcp.setCapability(CapabilityType.BROWSER_NAME, BrowserType.CHROME);
+		dcp.setCapability(CapabilityType.BROWSER_NAME, BrowserType.FIREFOX);
 		dcp.setCapability(CapabilityType.PLATFORM, Platform.LINUX);
 		dcp.setCapability(CapabilityType.SUPPORTS_APPLICATION_CACHE, true);
 		dcp.setCapability(CapabilityType.SUPPORTS_NETWORK_CONNECTION, true);
