@@ -37,14 +37,14 @@ public class Docker_p {
 	@BeforeClass
 	public static void setUp() throws Exception {
 		
-		DesiredCapabilities dcp = new DesiredCapabilities();
+		/.DesiredCapabilities dcp = new DesiredCapabilities();
 		dcp.setCapability(CapabilityType.BROWSER_NAME, BrowserType.FIREFOX);
 		dcp.setCapability(CapabilityType.PLATFORM, Platform.LINUX);
 		dcp.setCapability(CapabilityType.SUPPORTS_APPLICATION_CACHE, true);
 		dcp.setCapability(CapabilityType.SUPPORTS_NETWORK_CONNECTION, true);
 		dcp.setCapability("name", "PHP");
-		dcp.setCapability("idleTimeout", 150);
-		driver = new RemoteWebDriver(new URL("http://35.193.7.170:4444/wd/hub"),dcp);
+		dcp.setCapability("idleTimeout", 150);/
+		driver = new RemoteWebDriver(new URL("http://35.193.7.170:4444/wd/hub"),dcp);./
 	
 		/*System.setProperty("webdriver.chrome.driver","D:\\drivers\\chromedriver_win32\\chromedriver.exe");
 		driver = new ChromeDriver(); 
